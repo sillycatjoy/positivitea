@@ -1,7 +1,8 @@
 body {
-  background-image: url('./images/blurred-nighttime-cafe.jpg');
+  background-image: url('./images/nighttime-cafe.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
+  overflow-y: hidden;
   text-align: center;
 }
