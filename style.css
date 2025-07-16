@@ -2,6 +2,7 @@ body {
   background-image: url('./images/blurred-nighttime-cafe.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  color: white;
   height: 100vh;
   overflow-x: hidden;
   overflow-y: hidden;
