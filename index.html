@@ -48,6 +48,7 @@
         padding: 0px;
         background-color: rgba(0,0,0,0);
         text-align: center;
+        display: block;
       }
     </style>
     
@@ -65,11 +66,49 @@
         <div class="navigation"><p>About</p></div>
         <div class="navigation"><p>Submit</p></div>
         
-        <div class="textcontainer">
+        <div class="textcontainer" id="homepage">
           <div class="navigation" style="width: 575px; height: auto;"><p style="font-size: 2rem;">Grab a cup.</p></div>
         </div>
+        
+        <div class="textcontainer" id="aboutpage">
+          <h2>About</h2>
+        </div>
+        
+        <div class="textcontainer" id="submmitpage">
+          <h2>Submit</h2>
+        </div>
+        
       </div>
       <div style="width: 100vw; height: 100px; margin: 0 auto;">
-    </div> 
+    </div>
+      
+    <script>
+      
+      var homepage=document.getElementById("homepage").innerHTML
+      var aboutpage=document.getElementById("aboutpage").innerHTML
+      var submitpage=document.getElementById("submitpage").innerHTML
+
+      function clear() {
+        homepage.style.display = "none";
+        aboutpage.style.display = "none";
+        submitpage.style.display = "none";
+      }
+
+      function showhomepage() {
+        clear()
+        homepage.style.display = "block";
+      }
+      
+      function showaboutpage() {
+        clear()
+        aboutpage.style.display = "block";
+      }
+      
+      function showsubmitpage() {
+        clear()
+        submitpage.style.display = "block";
+      }
+      
+    </script>
   </body>
 </html>
