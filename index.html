@@ -88,24 +88,21 @@
       var aboutpage=document.getElementById("aboutpage")
       var submitpage=document.getElementById("submitpage")
 
-      function clear() {
-        homepage.style.display = "none";
+      function showhomepage() {
+        homepage.style.display = "block";
         aboutpage.style.display = "none";
         submitpage.style.display = "none";
       }
-
-      function showhomepage() {
-        clear()
-        homepage.style.display = "block";
-      }
       
       function showaboutpage() {
-        clear()
+        homepage.style.display = "none";
         aboutpage.style.display = "block";
+        submitpage.style.display = "none";
       }
       
       function showsubmitpage() {
-        clear()
+        homepage.style.display = "none";
+        aboutpage.style.display = "none";
         submitpage.style.display = "block";
       }
       
