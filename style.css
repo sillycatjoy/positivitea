@@ -7,4 +7,10 @@ body {
   overflow-x: hidden;
   overflow-y: hidden;
   text-align: center;
+  font-family: Gloria-Hallelujah;
+}
+
+@font-face {
+  font-family: "Gloria-Hallelujah";
+  src: url('./fonts/GloriaHallelujah.ttf');
 }
