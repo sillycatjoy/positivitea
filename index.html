@@ -66,15 +66,15 @@
         <div class="navigation" onclick="showaboutpage()"><p>About</p></div>
         <div class="navigation" onclick="showsubmitpage()"><p>Submit</p></div>
         
-        <div class="textcontainer" id="homepage">
+        <div class="textcontainer" id="homepage" style="display: block;">
           <div class="navigation" style="width: 575px; height: auto;"><p style="font-size: 2rem;">Grab a cup.</p></div>
         </div>
         
-        <div class="textcontainer" id="aboutpage">
+        <div class="textcontainer" id="aboutpage" style="display: hidden;">
           <h2>About</h2>
         </div>
         
-        <div class="textcontainer" id="submmitpage">
+        <div class="textcontainer" id="submmitpage" style="display: hidden;">
           <h2>Submit</h2>
         </div>
         
@@ -84,9 +84,9 @@
       
     <script>
       
-      var homepage=document.getElementById("homepage").innerHTML
-      var aboutpage=document.getElementById("aboutpage").innerHTML
-      var submitpage=document.getElementById("submitpage").innerHTML
+      var homepage=document.getElementById("homepage")
+      var aboutpage=document.getElementById("aboutpage")
+      var submitpage=document.getElementById("submitpage")
 
       function clear() {
         homepage.style.display = "none";
