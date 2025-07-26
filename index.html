@@ -52,6 +52,7 @@
         background-color: rgba(0,0,0,0);
         text-align: center;
         display: block;
+        animation: textFadeIn 0.8s
       }
 
       @keyframes navigationFadeIn {
@@ -62,6 +63,11 @@
       @keyframes navigationFadeOut {
         from {background-color: rgba(0,0,0,0.5)};
         to {background-color: rgba(0,0,0,0)};
+      }
+      
+      @keyframes textFadeIn {
+        from {color: rgba(255, 255, 255, 0)};
+        to {color: rgba(255, 255, 255, 1);
       }
       
     </style>
